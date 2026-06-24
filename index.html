@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andrés Camilo Moya — Desarrollador de Software</title>
+  <meta name="description" content="Desarrollador de Software | Automatización de procesos | Backend Python | Soluciones con IA" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVEGACIÓN
+  ═══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>ACM<span class="logo-bracket">/&gt;</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contacto" class="nav-link nav-cta">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow"></div>
+
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-eyebrow reveal">
+          <span class="dot-live"></span>
+          Disponible para nuevas oportunidades
+        </div>
+
+        <h1 class="hero-title reveal">
+          Andrés Camilo<br />
+          <span class="hero-name-accent">Moya</span>
+        </h1>
+
+        <div class="hero-role reveal">
+          <span class="terminal-prefix">$ </span>
+          <span id="typingText" class="typing-text"></span>
+          <span class="cursor-blink">|</span>
+        </div>
+
+        <p class="hero-description reveal">
+          Desarrollador de software enfocado en automatización de procesos
+          empresariales, desarrollo backend, integración de APIs y creación
+          de soluciones con inteligencia artificial.
+        </p>
+
+        <div class="hero-actions reveal">
+          <a href="#proyectos" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            Ver proyectos
+          </a>
+          <a href="#contacto" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Contactarme
+          </a>
+        </div>
+
+        <div class="hero-social reveal">
+          <a href="https://www.linkedin.com/in/camilo-moya-90a860262/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com/Camilomoya627" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="code-card">
+          <div class="code-card-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="code-filename">developer.py</span>
+          </div>
+          <pre class="code-body"><span class="c-keyword">class</span> <span class="c-class">Developer</span>:
+  <span class="c-keyword">def</span> <span class="c-func">__init__</span>(self):
+    self.name = <span class="c-str">"Andrés Camilo"</span>
+    self.focus = [
+      <span class="c-str">"Python Backend"</span>,
+      <span class="c-str">"Automatización"</span>,
+      <span class="c-str">"APIs REST"</span>,
+      <span class="c-str">"Inteligencia Artificial"</span>,
+    ]
+    self.available = <span class="c-bool">True</span>
+
+  <span class="c-keyword">def</span> <span class="c-func">solve</span>(self, problem):
+    <span class="c-keyword">return</span> <span class="c-str">"Solución eficiente ✓"</span></pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SOBRE MÍ
+  ═══════════════════════════════════════════ -->
+  <section class="sobre-mi" id="sobre-mi">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// sobre_mi.py</span>
+        <h2 class="section-title">Sobre mí</h2>
+      </div>
+
+      <div class="sobre-grid">
+        <div class="sobre-text reveal">
+          <p class="sobre-lead">
+            Soy desarrollador de software con experiencia en automatización
+            de procesos, integración de APIs y desarrollo de aplicaciones web.
+          </p>
+          <p>
+            He trabajado en soluciones empresariales utilizando Python, APIs REST,
+            Firebase e inteligencia artificial, participando en análisis, arquitectura
+            y desarrollo de soluciones tecnológicas que optimizan procesos, reducen
+            tareas manuales y mejoran la eficiencia operativa.
+          </p>
+          <p>
+            Me apasiona encontrar el punto donde la automatización inteligente
+            y la IA se convierten en herramientas reales de impacto para las empresas.
+          </p>
+
+          <div class="sobre-stats">
+            <div class="stat">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Proyectos completados</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">APIs integradas</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">2</span>
+              <span class="stat-label">Soluciones con IA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sobre-highlights reveal">
+          <div class="highlight-card">
+            <div class="highlight-icon">⚙️</div>
+            <h3>Automatización</h3>
+            <p>Desarrollo de scripts y herramientas que eliminan tareas repetitivas en entornos empresariales.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">🔗</div>
+            <h3>Integración de APIs</h3>
+            <p>Conexión fluida entre sistemas usando REST, autenticación segura y manejo robusto de errores.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">🤖</div>
+            <h3>Inteligencia Artificial</h3>
+            <p>Implementación de chatbots, transcripción automática y soluciones LLM para casos de uso reales.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">🐍</div>
+            <h3>Backend Python</h3>
+            <p>APIs con FastAPI, manejo de datos, logging profesional y arquitectura orientada a la eficiencia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PROYECTOS
+  ═══════════════════════════════════════════ -->
+  <section class="proyectos" id="proyectos">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// projects[]</span>
+        <h2 class="section-title">Proyectos</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Proyecto 1: Activación de Usuarios -->
+        <article class="project-card reveal">
+          <div class="project-image-wrap">
+            <img src="img-activacion.png" alt="Automatización activación usuarios Control-M" class="project-image" />
+            <div class="project-overlay">
+              <span class="project-type">Automatización · Python</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Automatización de Activación y Desactivación de Usuarios en Control-M</h3>
+            <p class="project-desc">
+              Solución automatizada en Python para gestionar permisos y accesos de usuarios en la plataforma
+              empresarial Control-M, integrando su API mediante autenticación por token para ejecutar
+              acciones administrativas de forma segura y eficiente.
+            </p>
+            <div class="project-participation">
+              <span class="participation-label">Participación:</span>
+              <ul>
+                <li>Análisis de API mediante Swagger</li>
+                <li>Validación de endpoints con Postman</li>
+                <li>Desarrollo del script Python e integración REST</li>
+                <li>Autenticación segura y manejo de errores</li>
+              </ul>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">API REST</span>
+              <span class="tag">Control-M API</span>
+              <span class="tag">Swagger</span>
+              <span class="tag">Postman</span>
+              <span class="tag">Token Auth</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 2: Monitoreo de Licenciamiento -->
+        <article class="project-card reveal">
+          <div class="project-image-wrap">
+            <img src="img-reporte.png" alt="Monitoreo y reportes de licenciamiento Control-M" class="project-image" />
+            <div class="project-overlay">
+              <span class="project-type">Automatización · Reporting</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Automatización de Monitoreo y Reportes de Licenciamiento en Control-M</h3>
+            <p class="project-desc">
+              Solución en Python para automatizar el monitoreo de licenciamiento de Control-M en diferentes
+              ambientes empresariales. Ejecuta consultas, consolida información de múltiples entornos
+              y genera reportes estructurados en JSON con logging profesional.
+            </p>
+            <div class="project-participation">
+              <span class="participation-label">Participación:</span>
+              <ul>
+                <li>Desarrollo de automatización multi-ambiente</li>
+                <li>Validaciones, logging y manejo de errores</li>
+                <li>Consolidación e integración de información</li>
+              </ul>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">APIs</span>
+              <span class="tag">JSON</span>
+              <span class="tag">Logging</span>
+              <span class="tag">Control-M</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 3: Medical AI -->
+        <article class="project-card reveal project-featured">
+          <div class="project-image-wrap">
+            <img src="img-chatpdf.png" alt="Medical AI plataforma SaaS" class="project-image" />
+            <div class="project-overlay">
+              <span class="project-type">SaaS · IA · En desarrollo</span>
+            </div>
+            <div class="project-badge">En desarrollo</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Medical AI — Plataforma SaaS para médicos</h3>
+            <p class="project-desc">
+              Plataforma SaaS que permite registrar consultas médicas mediante voz y texto con
+              transcripción automática e inteligencia artificial. Diseñada para optimizar
+              el flujo de trabajo clínico y reducir carga administrativa.
+            </p>
+            <div class="project-participation">
+              <span class="participation-label">Participación:</span>
+              <ul>
+                <li>Arquitectura y diseño técnico del proyecto</li>
+                <li>Desarrollo full-stack</li>
+                <li>Implementación de soluciones con IA (LLM + voz)</li>
+              </ul>
+            </div>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Firestore</span>
+              <span class="tag">Groq API</span>
+              <span class="tag">LLM</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 4: Chatbot Médico -->
+        <article class="project-card reveal">
+          <div class="project-image-wrap project-image-placeholder">
+            <div class="placeholder-icon">🤖</div>
+            <div class="project-overlay">
+              <span class="project-type">Chatbot · WhatsApp · IA</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-year">2025</div>
+            <h3 class="project-title">Chatbot Médico — WhatsApp Business + IA</h3>
+            <p class="project-desc">
+              Chatbot integrado con WhatsApp Business API para agendamiento automático de citas médicas
+              usando inteligencia artificial. Flujo conversacional multi-paso con gestión de sesiones
+              y respuestas inteligentes via GPT-4o-mini.
+            </p>
+            <div class="project-participation">
+              <span class="participation-label">Características:</span>
+              <ul>
+                <li>Flujo conversacional multi-paso</li>
+                <li>Gestión de sesiones y agendamiento automático</li>
+                <li>Respuestas inteligentes con GPT-4o-mini</li>
+              </ul>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">OpenAI GPT-4o-mini</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 5: Farmacia -->
+        <article class="project-card reveal">
+          <div class="project-image-wrap">
+            <img src="img-farmacia.png" alt="Sistema de gestión de farmacia" class="project-image" />
+            <div class="project-overlay">
+              <span class="project-type">Web App · Dashboard</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-year">2024</div>
+            <h3 class="project-title">Sistema de Gestión de Farmacia</h3>
+            <p class="project-desc">
+              Aplicación web completa para control de inventario farmacéutico con dashboard en
+              tiempo real, CRUD de productos, seguimiento de ventas y alertas de stock. Diseño
+              responsivo y sincronización en vivo con Firebase.
+            </p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">TailwindCSS</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Recharts</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SKILLS
+  ═══════════════════════════════════════════ -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// tech_stack</span>
+        <h2 class="section-title">Habilidades técnicas</h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-icon">⚡</span> Lenguajes
+          </h3>
+          <div class="skill-items">
+            <span class="skill-item primary">Python</span>
+            <span class="skill-item">JavaScript</span>
+            <span class="skill-item">TypeScript</span>
+            <span class="skill-item">HTML5</span>
+            <span class="skill-item">CSS3</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-icon">🔧</span> Backend
+          </h3>
+          <div class="skill-items">
+            <span class="skill-item primary">FastAPI</span>
+            <span class="skill-item primary">APIs REST</span>
+            <span class="skill-item">Node.js</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-icon">🎨</span> Frontend
+          </h3>
+          <div class="skill-items">
+            <span class="skill-item">React</span>
+            <span class="skill-item">TailwindCSS</span>
+            <span class="skill-item">Diseño responsive</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-icon">🗄️</span> Bases de datos
+          </h3>
+          <div class="skill-items">
+            <span class="skill-item">Firebase</span>
+            <span class="skill-item">Firestore</span>
+            <span class="skill-item">MySQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-icon">⚙️</span> Automatización
+          </h3>
+          <div class="skill-items">
+            <span class="skill-item primary">Python Automation</span>
+            <span class="skill-item primary">Control-M</span>
+            <span class="skill-item">Integración APIs</span>
+            <span class="skill-item">Scripts empresariales</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-icon">🤖</span> Inteligencia Artificial
+          </h3>
+          <div class="skill-items">
+            <span class="skill-item primary">OpenAI API</span>
+            <span class="skill-item primary">GPT-4o-mini</span>
+            <span class="skill-item primary">Groq API</span>
+            <span class="skill-item">LLM</span>
+            <span class="skill-item">Chatbots</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-icon">🛠️</span> Herramientas
+          </h3>
+          <div class="skill-items">
+            <span class="skill-item">Git</span>
+            <span class="skill-item">GitHub</span>
+            <span class="skill-item">Postman</span>
+            <span class="skill-item">Swagger</span>
+            <span class="skill-item">Azure DevOps</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-icon">📊</span> Datos & Cloud
+          </h3>
+          <div class="skill-items">
+            <span class="skill-item">Excel</span>
+            <span class="skill-item">Power BI</span>
+            <span class="skill-item">Netlify</span>
+            <span class="skill-item">Render</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACTO
+  ═══════════════════════════════════════════ -->
+  <section class="contacto" id="contacto">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// contacto.connect()</span>
+        <h2 class="section-title">Hablemos</h2>
+      </div>
+
+      <div class="contacto-content reveal">
+        <p class="contacto-lead">
+          ¿Tienes un proyecto en mente o buscas un desarrollador con enfoque
+          en automatización e IA? Estoy disponible y me encantaría conversar.
+        </p>
+
+        <div class="contact-cards">
+          <a href="https://wa.me/573148134138" target="_blank" rel="noopener" class="contact-card whatsapp">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+              </svg>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">WhatsApp</span>
+              <span class="contact-card-value">+57 314 813 4138</span>
+            </div>
+            <svg class="contact-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+
+          <a href="mailto:camilomoya864@gmail.com" class="contact-card email">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">Email</span>
+              <span class="contact-card-value">camilomoya864@gmail.com</span>
+            </div>
+            <svg class="contact-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+
+          <a href="https://www.linkedin.com/in/camilo-moya-90a860262/" target="_blank" rel="noopener" class="contact-card linkedin">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+              </svg>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">LinkedIn</span>
+              <span class="contact-card-value">camilo-moya-90a860262</span>
+            </div>
+            <svg class="contact-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+
+          <a href="https://github.com/Camilomoya627" target="_blank" rel="noopener" class="contact-card github">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">GitHub</span>
+              <span class="contact-card-value">Camilomoya627</span>
+            </div>
+            <svg class="contact-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <span class="footer-logo"><span class="logo-bracket">&lt;</span>ACM<span class="logo-bracket">/&gt;</span></span>
+        <p class="footer-text">Andrés Camilo Moya · Desarrollador de Software · 2025</p>
+        <p class="footer-sub">Construido con HTML5, CSS3 & JavaScript Vanilla</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
