@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Andrés Camilo Moya — Desarrollador de Software</title>
-  <meta name="description" content="Desarrollador de Software | Automatización de procesos | Backend Python | Soluciones con IA" />
+  <meta name="description" content="Desarrollador de Software | Automatización · QA Testing · Backend Python · IA" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -24,11 +24,13 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#inicio" class="nav-link">Inicio</a></li>
-        <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
-        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#contacto" class="nav-link nav-cta">Contacto</a></li>
+        <li><a href="#inicio"      class="nav-link">Inicio</a></li>
+        <li><a href="#sobre-mi"   class="nav-link">Sobre mí</a></li>
+        <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
+        <li><a href="#proyectos"  class="nav-link">Proyectos</a></li>
+        <li><a href="#skills"     class="nav-link">Skills</a></li>
+        <li><a href="#educacion"  class="nav-link">Educación</a></li>
+        <li><a href="#contacto"   class="nav-link nav-cta">Contacto</a></li>
       </ul>
     </div>
   </nav>
@@ -59,9 +61,8 @@
         </div>
 
         <p class="hero-description reveal">
-          Desarrollador de software enfocado en automatización de procesos
-          empresariales, desarrollo backend, integración de APIs y creación
-          de soluciones con inteligencia artificial.
+          Desarrollador de software junior con experiencia real en TCS, especializado
+          en automatización Python, integración de APIs REST, QA testing y soluciones con IA.
         </p>
 
         <div class="hero-actions reveal">
@@ -96,13 +97,15 @@
           <pre class="code-body"><span class="c-keyword">class</span> <span class="c-class">Developer</span>:
   <span class="c-keyword">def</span> <span class="c-func">__init__</span>(self):
     self.name = <span class="c-str">"Andrés Camilo"</span>
-    self.focus = [
+    self.company = <span class="c-str">"Tata Consultancy Services"</span>
+    self.roles = [
       <span class="c-str">"Python Backend"</span>,
+      <span class="c-str">"QA Testing"</span>,
       <span class="c-str">"Automatización"</span>,
-      <span class="c-str">"APIs REST"</span>,
-      <span class="c-str">"Inteligencia Artificial"</span>,
+      <span class="c-str">"IA Solutions"</span>,
     ]
     self.available = <span class="c-bool">True</span>
+    self.english = <span class="c-str">"B1"</span>
 
   <span class="c-keyword">def</span> <span class="c-func">solve</span>(self, problem):
     <span class="c-keyword">return</span> <span class="c-str">"Solución eficiente ✓"</span></pre>
@@ -129,32 +132,33 @@
       <div class="sobre-grid">
         <div class="sobre-text reveal">
           <p class="sobre-lead">
-            Soy desarrollador de software con experiencia en automatización
-            de procesos, integración de APIs y desarrollo de aplicaciones web.
+            Desarrollador de software junior con experiencia profesional real en
+            Tata Consultancy Services, trabajando dentro de equipos Scrum.
           </p>
           <p>
-            He trabajado en soluciones empresariales utilizando Python, APIs REST,
-            Firebase e inteligencia artificial, participando en análisis, arquitectura
-            y desarrollo de soluciones tecnológicas que optimizan procesos, reducen
-            tareas manuales y mejoran la eficiencia operativa.
+            Me especializo en automatizaciones Python, validación de APIs REST
+            y soluciones con inteligencia artificial. He integrado y validado más
+            de 15 endpoints REST, desarrollado chatbots médicos en WhatsApp y
+            construido plataformas SaaS full-stack desde cero.
           </p>
           <p>
-            Me apasiona encontrar el punto donde la automatización inteligente
-            y la IA se convierten en herramientas reales de impacto para las empresas.
+            También tengo experiencia en QA Testing: pruebas funcionales, de regresión
+            y automatización con Selenium, lo que me da una visión completa del ciclo
+            de desarrollo de software.
           </p>
 
           <div class="sobre-stats">
             <div class="stat">
+              <span class="stat-number">15+</span>
+              <span class="stat-label">Endpoints validados</span>
+            </div>
+            <div class="stat">
               <span class="stat-number">5+</span>
-              <span class="stat-label">Proyectos completados</span>
+              <span class="stat-label">Proyectos reales</span>
             </div>
             <div class="stat">
-              <span class="stat-number">3+</span>
-              <span class="stat-label">APIs integradas</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">2</span>
-              <span class="stat-label">Soluciones con IA</span>
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Sprints cumplidos</span>
             </div>
           </div>
         </div>
@@ -162,25 +166,94 @@
         <div class="sobre-highlights reveal">
           <div class="highlight-card">
             <div class="highlight-icon">⚙️</div>
-            <h3>Automatización</h3>
-            <p>Desarrollo de scripts y herramientas que eliminan tareas repetitivas en entornos empresariales.</p>
+            <h3>Automatización Python</h3>
+            <p>Scripts empresariales que eliminan tareas manuales y optimizan procesos internos en producción.</p>
           </div>
           <div class="highlight-card">
-            <div class="highlight-icon">🔗</div>
-            <h3>Integración de APIs</h3>
-            <p>Conexión fluida entre sistemas usando REST, autenticación segura y manejo robusto de errores.</p>
+            <div class="highlight-icon">🧪</div>
+            <h3>QA & Testing</h3>
+            <p>Pruebas funcionales y de regresión con Postman, Swagger y Selenium en módulos críticos.</p>
           </div>
           <div class="highlight-card">
             <div class="highlight-icon">🤖</div>
             <h3>Inteligencia Artificial</h3>
-            <p>Implementación de chatbots, transcripción automática y soluciones LLM para casos de uso reales.</p>
+            <p>Chatbots con GPT-4o-mini, transcripción automática y plataformas SaaS con LLM integrado.</p>
           </div>
           <div class="highlight-card">
-            <div class="highlight-icon">🐍</div>
-            <h3>Backend Python</h3>
-            <p>APIs con FastAPI, manejo de datos, logging profesional y arquitectura orientada a la eficiencia.</p>
+            <div class="highlight-icon">🔗</div>
+            <h3>Integración de APIs</h3>
+            <p>Conexión entre sistemas mediante REST, autenticación segura y manejo robusto de errores.</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       EXPERIENCIA LABORAL
+  ═══════════════════════════════════════════ -->
+  <section class="experiencia" id="experiencia">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// experiencia_laboral</span>
+        <h2 class="section-title">Experiencia</h2>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-company-info">
+                <h3 class="timeline-role">Desarrollador de Software</h3>
+                <span class="timeline-company">Tata Consultancy Services (TCS)</span>
+              </div>
+              <span class="timeline-period">2025 – 2026</span>
+            </div>
+            <div class="timeline-body">
+              <ul class="timeline-achievements">
+                <li>
+                  <span class="achieve-icon">🐍</span>
+                  Desarrollé y mantuve <strong>automatizaciones en Python</strong> para optimizar procesos internos del equipo.
+                </li>
+                <li>
+                  <span class="achieve-icon">🔗</span>
+                  Integré y validé <strong>más de 15 endpoints REST</strong> usando Postman y Swagger, asegurando el correcto funcionamiento de las APIs del proyecto.
+                </li>
+                <li>
+                  <span class="achieve-icon">🧪</span>
+                  Ejecuté <strong>pruebas funcionales y de regresión</strong> sobre módulos críticos, contribuyendo a la detección temprana de defectos antes del despliegue.
+                </li>
+                <li>
+                  <span class="achieve-icon">📄</span>
+                  Elaboré <strong>documentación técnica y de requisitos</strong> siguiendo estándares del equipo, facilitando la trazabilidad del proyecto.
+                </li>
+                <li>
+                  <span class="achieve-icon">🔄</span>
+                  Participé activamente en ceremonias <strong>Scrum</strong> (daily stand-ups, sprint reviews) en equipo multidisciplinario.
+                </li>
+                <li>
+                  <span class="achieve-icon">✅</span>
+                  Cumplí el <strong>100% de las tareas asignadas</strong> dentro de los tiempos establecidos en cada sprint.
+                </li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Python</span>
+                <span class="tag">APIs REST</span>
+                <span class="tag">Postman</span>
+                <span class="tag">Swagger</span>
+                <span class="tag">QA Testing</span>
+                <span class="tag">Scrum</span>
+                <span class="tag">Documentación técnica</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -197,12 +270,12 @@
 
       <div class="projects-grid">
 
-        <!-- Proyecto 1: Activación de Usuarios -->
+        <!-- Proyecto 1 -->
         <article class="project-card reveal">
           <div class="project-image-wrap">
             <img src="img-activacion.png" alt="Automatización activación usuarios Control-M" class="project-image" />
             <div class="project-overlay">
-              <span class="project-type">Automatización · Python</span>
+              <span class="project-type">Automatización · Python · TCS</span>
             </div>
           </div>
           <div class="project-body">
@@ -232,12 +305,12 @@
           </div>
         </article>
 
-        <!-- Proyecto 2: Monitoreo de Licenciamiento -->
+        <!-- Proyecto 2 -->
         <article class="project-card reveal">
           <div class="project-image-wrap">
             <img src="img-reporte.png" alt="Monitoreo y reportes de licenciamiento Control-M" class="project-image" />
             <div class="project-overlay">
-              <span class="project-type">Automatización · Reporting</span>
+              <span class="project-type">Automatización · Reporting · TCS</span>
             </div>
           </div>
           <div class="project-body">
@@ -265,7 +338,7 @@
           </div>
         </article>
 
-        <!-- Proyecto 3: Medical AI -->
+        <!-- Proyecto 3 -->
         <article class="project-card reveal project-featured">
           <div class="project-image-wrap">
             <img src="img-chatpdf.png" alt="Medical AI plataforma SaaS" class="project-image" />
@@ -279,13 +352,13 @@
             <p class="project-desc">
               Plataforma SaaS que permite registrar consultas médicas mediante voz y texto con
               transcripción automática e inteligencia artificial. Diseñada para optimizar
-              el flujo de trabajo clínico y reducir carga administrativa.
+              el flujo de trabajo clínico y reducir la carga administrativa del médico.
             </p>
             <div class="project-participation">
               <span class="participation-label">Participación:</span>
               <ul>
                 <li>Arquitectura y diseño técnico del proyecto</li>
-                <li>Desarrollo full-stack</li>
+                <li>Desarrollo full-stack como tech lead</li>
                 <li>Implementación de soluciones con IA (LLM + voz)</li>
               </ul>
             </div>
@@ -299,7 +372,7 @@
           </div>
         </article>
 
-        <!-- Proyecto 4: Chatbot Médico -->
+        <!-- Proyecto 4 -->
         <article class="project-card reveal">
           <div class="project-image-wrap project-image-placeholder">
             <div class="placeholder-icon">🤖</div>
@@ -312,7 +385,7 @@
             <h3 class="project-title">Chatbot Médico — WhatsApp Business + IA</h3>
             <p class="project-desc">
               Chatbot integrado con WhatsApp Business API para agendamiento automático de citas médicas
-              usando inteligencia artificial. Flujo conversacional multi-paso con gestión de sesiones
+              usando IA. Flujo conversacional multi-paso con gestión de sesiones en tiempo real
               y respuestas inteligentes via GPT-4o-mini.
             </p>
             <div class="project-participation">
@@ -332,7 +405,7 @@
           </div>
         </article>
 
-        <!-- Proyecto 5: Farmacia -->
+        <!-- Proyecto 5 -->
         <article class="project-card reveal">
           <div class="project-image-wrap">
             <img src="img-farmacia.png" alt="Sistema de gestión de farmacia" class="project-image" />
@@ -344,9 +417,9 @@
             <div class="project-year">2024</div>
             <h3 class="project-title">Sistema de Gestión de Farmacia</h3>
             <p class="project-desc">
-              Aplicación web completa para control de inventario farmacéutico con dashboard en
-              tiempo real, CRUD de productos, seguimiento de ventas y alertas de stock. Diseño
-              responsivo y sincronización en vivo con Firebase.
+              Aplicación web completa para control de inventario de antibióticos con dashboard en
+              tiempo real, CRUD de productos, seguimiento de ventas y alertas de stock.
+              Sincronización en vivo con Firebase.
             </p>
             <div class="project-tags">
               <span class="tag">React</span>
@@ -375,22 +448,19 @@
       <div class="skills-grid">
 
         <div class="skill-group reveal">
-          <h3 class="skill-group-title">
-            <span class="skill-icon">⚡</span> Lenguajes
-          </h3>
+          <h3 class="skill-group-title"><span class="skill-icon">⚡</span> Lenguajes</h3>
           <div class="skill-items">
             <span class="skill-item primary">Python</span>
-            <span class="skill-item">JavaScript</span>
+            <span class="skill-item">JavaScript (ES6+)</span>
             <span class="skill-item">TypeScript</span>
+            <span class="skill-item">Java</span>
             <span class="skill-item">HTML5</span>
             <span class="skill-item">CSS3</span>
           </div>
         </div>
 
         <div class="skill-group reveal">
-          <h3 class="skill-group-title">
-            <span class="skill-icon">🔧</span> Backend
-          </h3>
+          <h3 class="skill-group-title"><span class="skill-icon">🔧</span> Backend</h3>
           <div class="skill-items">
             <span class="skill-item primary">FastAPI</span>
             <span class="skill-item primary">APIs REST</span>
@@ -399,9 +469,7 @@
         </div>
 
         <div class="skill-group reveal">
-          <h3 class="skill-group-title">
-            <span class="skill-icon">🎨</span> Frontend
-          </h3>
+          <h3 class="skill-group-title"><span class="skill-icon">🎨</span> Frontend</h3>
           <div class="skill-items">
             <span class="skill-item">React</span>
             <span class="skill-item">TailwindCSS</span>
@@ -410,32 +478,38 @@
         </div>
 
         <div class="skill-group reveal">
-          <h3 class="skill-group-title">
-            <span class="skill-icon">🗄️</span> Bases de datos
-          </h3>
+          <h3 class="skill-group-title"><span class="skill-icon">🗄️</span> Bases de datos</h3>
           <div class="skill-items">
             <span class="skill-item">Firebase</span>
             <span class="skill-item">Firestore</span>
-            <span class="skill-item">MySQL</span>
+            <span class="skill-item">SQL / MySQL</span>
           </div>
         </div>
 
         <div class="skill-group reveal">
-          <h3 class="skill-group-title">
-            <span class="skill-icon">⚙️</span> Automatización
-          </h3>
+          <h3 class="skill-group-title"><span class="skill-icon">🧪</span> QA & Testing</h3>
+          <div class="skill-items">
+            <span class="skill-item primary">Pruebas funcionales</span>
+            <span class="skill-item primary">Pruebas de regresión</span>
+            <span class="skill-item primary">Postman</span>
+            <span class="skill-item primary">Swagger</span>
+            <span class="skill-item">Selenium</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title"><span class="skill-icon">⚙️</span> Automatización</h3>
           <div class="skill-items">
             <span class="skill-item primary">Python Automation</span>
             <span class="skill-item primary">Control-M</span>
-            <span class="skill-item">Integración APIs</span>
+            <span class="skill-item">n8n</span>
+            <span class="skill-item">AppSheet</span>
             <span class="skill-item">Scripts empresariales</span>
           </div>
         </div>
 
         <div class="skill-group reveal">
-          <h3 class="skill-group-title">
-            <span class="skill-icon">🤖</span> Inteligencia Artificial
-          </h3>
+          <h3 class="skill-group-title"><span class="skill-icon">🤖</span> Inteligencia Artificial</h3>
           <div class="skill-items">
             <span class="skill-item primary">OpenAI API</span>
             <span class="skill-item primary">GPT-4o-mini</span>
@@ -446,27 +520,101 @@
         </div>
 
         <div class="skill-group reveal">
-          <h3 class="skill-group-title">
-            <span class="skill-icon">🛠️</span> Herramientas
-          </h3>
+          <h3 class="skill-group-title"><span class="skill-icon">🛠️</span> Herramientas & Gestión</h3>
           <div class="skill-items">
             <span class="skill-item">Git</span>
             <span class="skill-item">GitHub</span>
-            <span class="skill-item">Postman</span>
-            <span class="skill-item">Swagger</span>
+            <span class="skill-item">Jira</span>
+            <span class="skill-item">Scrum</span>
             <span class="skill-item">Azure DevOps</span>
           </div>
         </div>
 
         <div class="skill-group reveal">
-          <h3 class="skill-group-title">
-            <span class="skill-icon">📊</span> Datos & Cloud
-          </h3>
+          <h3 class="skill-group-title"><span class="skill-icon">📊</span> Datos & Deploy</h3>
           <div class="skill-items">
-            <span class="skill-item">Excel</span>
+            <span class="skill-item">Excel (Intermedio)</span>
             <span class="skill-item">Power BI</span>
             <span class="skill-item">Netlify</span>
             <span class="skill-item">Render</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title"><span class="skill-icon">🌐</span> Idiomas</h3>
+          <div class="skill-items">
+            <span class="skill-item primary">Español — Nativo</span>
+            <span class="skill-item">Inglés — B1</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       EDUCACIÓN
+  ═══════════════════════════════════════════ -->
+  <section class="educacion" id="educacion">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// educacion.load()</span>
+        <h2 class="section-title">Educación</h2>
+      </div>
+
+      <div class="edu-grid">
+
+        <div class="edu-card reveal edu-card-main">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-content">
+            <div class="edu-status">
+              <span class="edu-badge in-progress">En curso</span>
+            </div>
+            <h3 class="edu-title">Tecnología en Desarrollo de Software</h3>
+            <span class="edu-institution">Universidad Católica Luis Amigó</span>
+            <span class="edu-location">Medellín, Antioquia</span>
+            <p class="edu-desc">
+              Formación técnica y práctica en desarrollo de software, bases de datos,
+              programación orientada a objetos, ingeniería de requisitos y metodologías ágiles.
+              Próximo a graduarme, aplicando los conocimientos directamente en proyectos reales.
+            </p>
+            <div class="edu-progress-wrap">
+              <div class="edu-progress-label">
+                <span>Progreso académico</span>
+                <span class="edu-progress-pct">~85%</span>
+              </div>
+              <div class="edu-progress-bar">
+                <div class="edu-progress-fill" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-icon">📜</div>
+          <div class="edu-content">
+            <div class="edu-status">
+              <span class="edu-badge completed">Completado</span>
+            </div>
+            <h3 class="edu-title">Bachiller Académico</h3>
+            <span class="edu-institution">Colegio Sagrado Corazón</span>
+            <span class="edu-location">Bello, Antioquia · 2022</span>
+          </div>
+        </div>
+
+        <!-- Habilidades blandas -->
+        <div class="edu-card reveal softskills-card">
+          <div class="edu-icon">💡</div>
+          <div class="edu-content">
+            <h3 class="edu-title">Habilidades Blandas</h3>
+            <div class="softskills-list">
+              <span class="softskill">Aprendizaje autónomo rápido</span>
+              <span class="softskill">Trabajo en equipo</span>
+              <span class="softskill">Comunicación asertiva</span>
+              <span class="softskill">Organización</span>
+              <span class="softskill">Proactividad</span>
+              <span class="softskill">Orientación a resultados</span>
+            </div>
           </div>
         </div>
 
@@ -486,8 +634,8 @@
 
       <div class="contacto-content reveal">
         <p class="contacto-lead">
-          ¿Tienes un proyecto en mente o buscas un desarrollador con enfoque
-          en automatización e IA? Estoy disponible y me encantaría conversar.
+          ¿Buscas un desarrollador con experiencia real, enfoque en automatización,
+          QA e IA? Estoy disponible y me encantaría conversar sobre tu proyecto u oportunidad.
         </p>
 
         <div class="contact-cards">

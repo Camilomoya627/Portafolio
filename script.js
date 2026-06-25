@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const phrases = [
     'Python Backend Developer',
     'Automatización de procesos',
-    'Integración de APIs REST',
+    'QA Testing & APIs REST',
     'Soluciones con IA'
   ];
 
