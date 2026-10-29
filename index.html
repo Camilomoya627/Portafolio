@@ -405,33 +405,125 @@
           </div>
         </article>
 
-        <!-- Proyecto 5 -->
-        <article class="project-card reveal">
+        <!-- Proyecto 5: Mesón QR -->
+        <article class="project-card reveal project-featured">
           <div class="project-image-wrap">
-            <img src="img/farmacia.png" alt="Sistema de gestión de farmacia" class="project-image" />
+            <div class="project-terminal">
+              <div class="terminal-line"><span class="terminal-prompt">$</span><span class="terminal-val">npm run verify</span></div>
+              <div class="terminal-line"><span class="terminal-comment">✓ check:local · ✓ typecheck · ✓ test:unit</span></div>
+              <div class="terminal-line"><span class="terminal-comment">✓ seed:check · ✓ test:web · ✓ build</span></div>
+              <div class="terminal-line" style="margin-top:6px"><span class="terminal-prompt">$</span><span class="terminal-val">npm run dev:web</span></div>
+              <div class="terminal-line"><span class="terminal-accent">71 productos</span><span class="terminal-val"> · 9 categorías · 56 fotos</span></div>
+              <div class="terminal-line"><span class="terminal-accent">IA Groq+Llama</span><span class="terminal-val"> · QR por mesa</span></div>
+              <div class="terminal-line"><span class="terminal-val">→ http://localhost:5173</span></div>
+            </div>
             <div class="project-overlay">
-              <span class="project-type">Web App · Dashboard</span>
+              <span class="project-type">Web App · Firebase · IA · QR</span>
             </div>
           </div>
           <div class="project-body">
-           
-            <h3 class="project-title">Sistema de Gestión de Farmacia</h3>
+            <h3 class="project-title">Mesón QR — Menú digital e IA para El Mesón Antioqueño</h3>
             <p class="project-desc">
-              Aplicación web completa para control de inventario de antibióticos con dashboard en
-              tiempo real, CRUD de productos, seguimiento de ventas y alertas de stock.
-              Sincronización en vivo con Firebase.
+              Aplicación completa para restaurante: menú digital con 71 platos reales y 56 fotografías,
+              asistente de recomendaciones con IA (Groq + Llama), sistema de mesas con QR y tokens
+              cifrados (SHA-256), y múltiples suites de pruebas automatizadas.
             </p>
+            <div class="project-participation">
+              <span class="participation-label">Características:</span>
+              <ul>
+                <li>Catálogo real con buscador, filtros y detalle de producto</li>
+                <li>Guía IA: «¿Qué te recomendamos hoy?» (Groq + Llama)</li>
+                <li>QR por mesa con token de seguridad opaco (SHA-256 en Firestore)</li>
+                <li>Tests unitarios, web, reglas Firestore y E2E (Playwright)</li>
+              </ul>
+            </div>
             <div class="project-tags">
-              <span class="tag">React</span>
               <span class="tag">TypeScript</span>
-              <span class="tag">TailwindCSS</span>
+              <span class="tag">React</span>
               <span class="tag">Firebase</span>
-              <span class="tag">Recharts</span>
+              <span class="tag">Firestore</span>
+              <span class="tag">Groq API</span>
+              <span class="tag">Llama</span>
+              <span class="tag">Vitest</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/Camilomoya627/Restauarante" target="_blank" rel="noopener" class="project-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                Ver código
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 6: IUBello Conecta -->
+        <article class="project-card reveal">
+          <div class="project-image-wrap project-image-placeholder">
+            <div class="placeholder-icon">🎓</div>
+            <div class="project-overlay">
+              <span class="project-type">Full-Stack · Python · React</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">IUBello Conecta — Asistente virtual universitario</h3>
+            <p class="project-desc">
+              Plataforma web con asistente conversacional para la IU de Bello. Centraliza consultas
+              sobre oferta académica, inscripciones y servicios mediante una API REST con arquitectura
+              preparada para reemplazar SQLite por PostgreSQL sin afectar el resto del sistema.
+            </p>
+            <div class="project-participation">
+              <span class="participation-label">Arquitectura:</span>
+              <ul>
+                <li>Frontend React 18 + TypeScript con React Router</li>
+                <li>Backend Python Flask con API REST y lógica del asistente aislada</li>
+                <li>SQLite con capa de acceso a datos intercambiable por PostgreSQL</li>
+              </ul>
+            </div>
+            <div class="project-tags">
+              <span class="tag">React 18</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Python</span>
+              <span class="tag">Flask</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">REST API</span>
             </div>
           </div>
         </article>
 
       </div>
+
+      <!-- ── Portafolio BI ── -->
+      <div class="bi-section-header reveal">
+        <span class="section-tag">// bi_portfolio</span>
+        <h3 class="section-title" style="font-size:1.5rem; margin-top:8px;">Analítica de Datos · Power BI</h3>
+        <p style="color:var(--text-muted); font-size:0.9rem; margin-top:12px; max-width:640px;">
+          Cuatro proyectos de Business Intelligence con datos sintéticos: modelo de datos, relaciones,
+          medidas DAX, limpieza con Power Query y mockups de dashboard. Las empresas son ficticias
+          y los proyectos están documentados para demostración.
+        </p>
+      </div>
+      <div class="bi-grid">
+        <div class="bi-card reveal">
+          <span class="bi-card-tag">Ventas</span>
+          <div class="bi-card-title">NovaMarket — Rendimiento Comercial</div>
+          <p class="bi-card-desc">Margen bruto, productos top, canales de venta y evolución mensual. DAX + Power Query.</p>
+        </div>
+        <div class="bi-card reveal">
+          <span class="bi-card-tag">Finanzas</span>
+          <div class="bi-card-title">FinanGestión — Facturación y Cartera</div>
+          <p class="bi-card-desc">Recaudo vs. facturación, cartera vencida por antigüedad y KPIs financieros operativos.</p>
+        </div>
+        <div class="bi-card reveal">
+          <span class="bi-card-tag">Inventario</span>
+          <div class="bi-card-title">LogiAndes — Control de Stock</div>
+          <p class="bi-card-desc">Niveles de inventario, movimientos de almacén, alertas de reposición y rotación.</p>
+        </div>
+        <div class="bi-card reveal">
+          <span class="bi-card-tag">Calidad de Datos</span>
+          <div class="bi-card-title">DataControl — Registros e Incidencias</div>
+          <p class="bi-card-desc">Tasa de errores, volumen procesado, incidencias por fuente y tendencias de calidad.</p>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -498,6 +590,7 @@
         </div>
 
         <div class="skill-group reveal">
+          <h3 class="skill-group-title"><span class="skill-icon"></span> Automatización</h3>
           <div class="skill-items">
             <span class="skill-item primary">Python Automation</span>
             <span class="skill-item primary">Control-M</span>
@@ -530,10 +623,13 @@
         </div>
 
         <div class="skill-group reveal">
-          <h3 class="skill-group-title"><span class="skill-icon"></span> Datos & Deploy</h3>
+          <h3 class="skill-group-title"><span class="skill-icon"></span> Datos & BI</h3>
           <div class="skill-items">
-            <span class="skill-item">Excel (Intermedio)</span>
-            <span class="skill-item">Power BI</span>
+            <span class="skill-item primary">Power BI</span>
+            <span class="skill-item primary">DAX</span>
+            <span class="skill-item primary">Power Query</span>
+            <span class="skill-item">Excel (Avanzado)</span>
+            <span class="skill-item">SQL</span>
             <span class="skill-item">Netlify</span>
             <span class="skill-item">Render</span>
           </div>
@@ -701,8 +797,7 @@
     <div class="container">
       <div class="footer-content">
         <span class="footer-logo"><span class="logo-bracket">&lt;</span>ACM<span class="logo-bracket">/&gt;</span></span>
-        <p class="footer-text">Andrés Camilo Moya · Desarrollador de Software ·
-        <p class="footer-sub"></p>
+        <p class="footer-text">Andrés Camilo Moya · Desarrollador de Software</p>
       </div>
     </div>
   </footer>

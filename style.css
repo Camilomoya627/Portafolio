@@ -759,6 +759,131 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* Project action buttons */
+.project-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.73rem;
+  padding: 7px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border-accent);
+  color: var(--accent);
+  background: var(--accent-dim);
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.project-btn:hover {
+  background: rgba(0, 212, 255, 0.2);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.project-btn svg {
+  flex-shrink: 0;
+}
+
+/* Terminal-style project visual */
+.project-terminal {
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  background: #080d1a;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: #4ade80;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  overflow: hidden;
+}
+
+.terminal-line {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  line-height: 1.5;
+}
+
+.terminal-prompt {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.terminal-val {
+  color: #e8eaed;
+}
+
+.terminal-comment {
+  color: #4a5568;
+}
+
+.terminal-accent {
+  color: #a78bfa;
+}
+
+/* BI section within projects */
+.bi-section-header {
+  margin-top: 48px;
+  padding-top: 48px;
+  border-top: 1px solid var(--border);
+}
+
+.bi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.bi-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.bi-card:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-2px);
+}
+
+.bi-card-tag {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.bi-card-title {
+  font-family: var(--font-display);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.bi-card-desc {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
 /* ════════════════════════════════════════════
    SKILLS
 ════════════════════════════════════════════ */
